@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KC Chiropractor Patient Survey</title>
+
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <h1 id="title">KC Chiropractor Patient Survey</h1>
+      <p title="description">Thank you for taking the time to help us improve our services!</p>
+
+      <form id="survey-form">
+          <label id="name-label" for="name">Name:
+            </label>
+            <input name="name" type="text" id="name" placeholder="Enter your name" required>
+
+            <label id="email-label" for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+
+           <label id="number-label" for="number">Age</label>
+           <input type="number" id="number" name="number" placeholder="Enter your age" min="1" max="120">
+
+           <label for="dropdown">How did you hear about us?</label>
+           <select id="dropdown" name="referral">
+             <option value="">Select an option</option>
+             <option value="friend">Friend or family</option>
+             <option value="online">Online</option>
+             <option value="Advertisments">Advertisments</option>
+             <option value="other">Other</option>
+             </select>
+        <fieldset>
+          <legend>How satisfied are you with our services?</legend>
+          <label>
+          <input type="radio" name="satisfaction" value="very-satisfied"> Very Satisfied</label>
+           <label>
+          <input type="radio" name="satisfaction" value="satisfied"> Satisfied</label>
+           <label>
+          <input type="radio" name="satisfaction" value="Neutral"> Neutral</label>
+           <label>
+          <input type="radio" name="satisfaction" value="unsatisfied">Unsatisfied</label>
+           <label>
+          <input type="radio" name="satisfaction" value="very-unsatisfied"> Very Unsatisfied</label>
+          </fieldset>     
+            <fieldset>
+              <legend>What services would you like to see improved? (Check all that apply)</legend>
+          <label>
+            <input type="checkbox" name="improvments" value="adjustments">Spinal Adjustments</label>
+            <label>
+        <input type="checkbox" name="improvements" value="massage"> Massage Therapy
+      </label>
+      <label>
+        <input type="checkbox" name="improvements" value="nutrition"> Nutritional Counseling
+      </label>
+      <label>
+        <input type="checkbox" name="improvements" value="exercises"> Rehabilitation Exercises
+      </label>
+      <label>
+        <input type="checkbox" name="improvements" value="other"> Other
+      </label>
+
+              </fieldset>
+
+              <label for="comments">Any additional comments or suggestions?</label>
+              <textarea id="comments" name="comments" placeholder="Enter your comments here..."> </textarea>
+
+<button type="submit" id="submit">Submit</button>
+
+        </form>
+      </body>
+  </html>
